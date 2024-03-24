@@ -1,0 +1,41 @@
+<div class="dataFilter-container">
+    <div class="dataFilter">
+        <div class="dataFilter-stgs">
+            <label>
+                Search title:
+                <input type="text" id="filterItem" placeholder="Pro" [(ngModel)]="productsService.productTitle">
+            </label>
+            <label>
+                Search category:
+                <select name="category" id="filterItem" class="selectWidth" [(ngModel)]="productsService.categoryName">
+                    <option value="All">All</option>
+                    @for(elem of productsService.categories; track $index){
+                        <option value="{{elem}}">{{elem}}</option>
+                    }
+                </select>
+            </label>
+        </div>
+        <div class="dataFilter-stgs">
+            <label>
+                Price range: {{totalPrice}}
+                <div class="range-info">
+                    <div class="count-info">
+                        <p>{{minPrice}}</p>
+                        <p>{{maxPrice}}</p>
+                    </div>
+                    <input type="range" min="{{minPrice}}" max="{{maxPrice}}" value="{{totalPrice}}" [(ngModel)]="productsService.totalPrice">
+                </div>
+            </label>
+            <label>
+                Rating range: {{totalRating}}
+                <div class="range-info">
+                    <div class="count-info">
+                        <p>{{minRating}}</p>
+                        <p>{{maxRating}}</p>
+                    </div>
+                    <input type="range" min={{minRating}} max={{maxRating}} value="{{totalRating}}" [(ngModel)]="productsService.totalRating">
+                </div>
+            </label>
+        </div>
+    </div>
+</div>

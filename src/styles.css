@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background: #EAF4F4;
+    color: #000;
+    font-weight: 400;
+    font-family: "Inter Tight", sans-serif;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 82px 186px;
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+        padding: 50px 30px;
+    }
+}

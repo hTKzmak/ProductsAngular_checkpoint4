@@ -1,0 +1,40 @@
+.productItem {
+    background-color: #CCE3DE;
+    
+    border: 1px solid #ABABAB;
+    border-radius: 22px;
+    
+    padding: 8px 16px;
+    width: 223px;
+
+    font-size: 12px;
+
+    display: grid;
+    justify-content: center;
+}
+
+.productItem>img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.productItem-info{
+    margin-top: 15px;
+    display: grid;
+    gap: 13px;
+}
+
+.info-item{
+    background-color: #A4C3B2;
+    color: #000;
+    
+    border: 1px solid #ABABAB;
+    border-radius: 22px;
+    
+    text-align: left;
+    
+    font-weight: 600;
+    
+    padding: 4px 11px;
+}
